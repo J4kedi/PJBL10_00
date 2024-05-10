@@ -7,6 +7,15 @@ public class Carrinho {
         listaProdutos.add(p);
     }
 
+    public void removerProduto(Produto p) {
+        if(listaProdutos.isEmpty()) {
+            System.out.println("Carrinho vazio!");
+        } else {
+            listaProdutos.remove(p);
+            System.out.println("Produto removido com sucesso!");
+        }
+    }
+
     public ArrayList<Produto> getListaProdutos() {
         return listaProdutos;
     }

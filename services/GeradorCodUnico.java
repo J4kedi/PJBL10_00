@@ -17,7 +17,6 @@ public class GeradorCodUnico {
     }
 
     public int getCodigo() {
-        gerarCod();
         return codigo;
     }
 }
