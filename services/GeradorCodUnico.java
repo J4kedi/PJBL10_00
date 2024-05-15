@@ -8,7 +8,7 @@ public class GeradorCodUnico {
     private int codigo;
     private ArrayList<Integer> listaCodigos = new ArrayList<Integer>();
 
-    public void gerarCod() {
+    private void gerarCod() {
         do {
             codigo = gerador.nextInt(100000);
         } while(listaCodigos.contains(codigo));
@@ -17,6 +17,7 @@ public class GeradorCodUnico {
     }
 
     public int getCodigo() {
+        gerarCod();
         return codigo;
     }
 }

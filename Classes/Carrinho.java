@@ -3,6 +3,10 @@ import java.util.ArrayList;
 public class Carrinho {
     private ArrayList<Produto> listaProdutos = new ArrayList<>();
 
+    public void exibirCarrinho(){
+        listaProdutos.stream().forEach(System.out::println);
+    }
+    
     public void adicionarProduto(Produto p) {
         listaProdutos.add(p);
     }
