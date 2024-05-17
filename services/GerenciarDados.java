@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import javax.print.DocFlavor.READER;
 import classes.Usuario;
-import com.google.code.gson;
+import com.google.code.gson.Gson;
 
 public class GerenciarDados {
     private static final String FILE_PATH = "../json/dados.json";
