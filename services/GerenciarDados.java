@@ -6,12 +6,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import javax.print.DocFlavor.READER;
-
 import classes.Usuario;
+import com.google.code.gson;
 
 public class GerenciarDados {
     private static final String FILE_PATH = "../json/dados.json";
@@ -21,6 +18,8 @@ public class GerenciarDados {
 
         try (Reader reader = new FileReader(FILE_PATH)) {
             Gson gson = new Gson();
+
+            
         }
 
         return usuarios;
